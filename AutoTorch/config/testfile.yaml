@@ -1,0 +1,13 @@
+train_type: none
+checkpoint_settings:
+  keep_checkpoints: 5
+  interval: 3000
+hyperparameters:
+  learning_rate: 0.0003
+  momentum: 0.9
+  num_epoch: 5
+tensorboard:
+  loss: True
+  accuracy: True
+  learning_rate: True
+use_tune: False
