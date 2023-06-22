@@ -59,3 +59,11 @@ Enable tune parameters like file in the config/tune.yaml to enable ray.tune:
 python read_config.py config/tune.yaml --run-id=<run-identifier>
 ```
 
+
+
+Tensorboard can be used：
+
+```
+tensorboard --logdir=path/you/set/<run-identifier>
+```
+
