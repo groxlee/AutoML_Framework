@@ -101,6 +101,7 @@ class BaseTorch:
         for batch_idx, (input, label) in enumerate(self.train_loader):
             input, label = input.to(self.device), label.to(self.device)
             optimizer.zero_grad()
+            #input shape:  [4, 3, 32, 32]
             output = self.model(input)
             loss = criterion(output, label)
             loss.backward()
@@ -179,6 +180,11 @@ class BaseTorch:
             for epoch in range(start_epoch, self.epochs + 1):
                 self.train(epoch, optimizer,criterion)
                 self.eval(criterion)
+                
+            run_id = self.checkpoint_settings.run_id
+            write_path = self.checkpoint_settings.write_path
+            dummy_input = torch.randn(1, 3, 32, 32, device=self.device)
+            torch.onnx.export(self.model, dummy_input, f'{write_path}/{run_id}.onnx')
         except (KeyboardInterrupt) as ex:
             print(f'Training was interrupted. Please wait while the model is generated.')
             run_id = self.checkpoint_settings.run_id

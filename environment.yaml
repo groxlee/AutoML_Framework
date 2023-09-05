@@ -8,7 +8,7 @@ dependencies:
   - absl-py=1.4.0
   - aiohttp=3.8.3
   - aiosignal=1.2.0
-  - ansicon=1.89.0
+  # - ansicon=1.89.0
   - anyio=3.5.0
   - appdirs=1.4.4
   - arrow=1.2.3
@@ -70,7 +70,7 @@ dependencies:
   - h5py=3.7.0
   - hdf5=1.10.6
   - html5lib=1.1
-  - icc_rt=2022.1.0
+  # - icc_rt=2022.1.0
   - icu=58.2
   - idna=3.4
   - importlib-metadata=6.0.0
@@ -178,7 +178,7 @@ dependencies:
   - pytorch=1.12.1
   - pytorch-lightning=1.9.3
   - pytz=2022.7
-  - pywin32-ctypes=0.2.0
+  # - pywin32-ctypes=0.2.0
   - pyyaml=6.0
   - qt-main=5.15.2
   - qt-webengine=5.15.9
@@ -224,8 +224,8 @@ dependencies:
   - urllib3=1.26.16
   - utf8proc=2.6.1
   - uvicorn=0.20.0
-  - vc=14.2
-  - vs2015_runtime=14.27.29016
+  # - vc=14.2
+  # - vs2015_runtime=14.27.29016
   - wcwidth=0.2.5
   - webencodings=0.5.1
   - websockets=10.4
@@ -271,4 +271,4 @@ dependencies:
       - waitress==2.1.2
       - websocket-client==1.5.1
       - werkzeug==2.3.3
-prefix: G:\Anaconda\envs\raytune
+
